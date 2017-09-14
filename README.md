@@ -18,5 +18,5 @@ This is based on the [Angular Snippets repository](https://github.com/johnpapa/v
 * For example, summon Alfred and type `ng comp`
 * Your query following `ng` is matched against the snippet names via Alfred workflow's default `filter` function.
 
-![Snippets in Action](https://media.giphy.com/media/l378tKxxt3lxH2h68/giphy.gif)
+![Snippets in Action](http://gph.is/2f9AUjY)
 
