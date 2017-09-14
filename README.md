@@ -18,6 +18,8 @@ This is based on the [Angular Snippets repository](https://github.com/johnpapa/v
 * For example, summon Alfred and type `ng comp`
 * Your query following `ng` is matched against the snippet names via Alfred workflow's default `filter` function.
 
+See it in action here, where I have the following apps open: vim in a terminal, WebStorm, Sublime Text, and MS Word (just for fun!):
+
 ![Snippets in Action][snippets]
 
 [snippets]: https://github.com/ejsuncy/alfred-angular-snippets/blob/master/snippets.gif
