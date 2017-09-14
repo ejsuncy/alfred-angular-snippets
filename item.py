@@ -13,9 +13,7 @@ def main(wf):
 
     # var_names = os.getenv("varNames").split()
 
-    variables = {
-        "varName" : "shelby"
-    }
+    variables = {}
 
     # for var_name in var_names:
     #     variables.update({var_name : os.getenv(var_name)})
