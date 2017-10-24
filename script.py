@@ -51,8 +51,7 @@ def main(wf):
 
             # if len(query) > 1:
             for match in match_iter:
-                var_index_str, var_name = match.group(1,2)
-                var_index = int(var_index_str)
+                var_name = match.group(2)
                 var_string = re.escape(match.group(0))
                 snippet_body = re.sub(var_string, "%s" % var_name, snippet_body) # replace ${1:varname} with varname (VS Code -> alfred)
 
