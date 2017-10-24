@@ -78,6 +78,9 @@ Your query will be matched against the following snippet names:
 |ngSwitch|
 |pre w/ json|
 |pre w/ async json|
+|container|
+|template|
+|content|
 
 ## Release Notes
 ### `v0.1.2`
