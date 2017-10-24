@@ -81,6 +81,7 @@ Your query will be matched against the following snippet names:
 |container|
 |template|
 |content|
+|resolver|
 
 ## Release Notes
 ### `v0.1.2`

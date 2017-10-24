@@ -380,6 +380,27 @@
       "}"
     ]
   },
+  "Angular Resolver" : {
+    "prefix": "a-resolver",
+    "description": "Angular Resolver",
+    "body":[
+      "import { Injectable } from '@angular/core';",
+      "import { Observable } from 'rxjs/Observable';",
+      "//import { ${1:Name}Service } from './${TM_FILENAME_BASE/resolver/$1/}service';",
+      "import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@angular/router';",
+      "",
+      "//Resolvers have to fetch for some data hence the service",
+      "",
+      "@Injectable()",
+      "export class ${1:Name}Resolver implements Resolve<any> {",
+      "\tconstructor(private ${2:name}Service: ${1:Name}Service, private router: Router) {}",
+      "",
+      "\tresolve(route: ActivatedRouteSnapshot): Observable<any>|Promise<any>|any {",
+      "\t\treturn this.${2:name}Service.get()",
+      "\t}",
+      "}"
+    ]
+  },
   "RxJS Observable Import": {
     "prefix": "rx-observable",
     "description": "RxJS Observable import",
