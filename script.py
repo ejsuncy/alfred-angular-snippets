@@ -6,7 +6,7 @@ import re
 from workflow import Workflow3
 import json
 
-__version__ = 'v0.1.1'
+__version__ = 'v0.1.2'
 __github_slug__ = 'ejsuncy/alfred-angular-snippets.git'
 
 log = None
