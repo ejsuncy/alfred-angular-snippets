@@ -79,5 +79,16 @@ Your query will be matched against the following snippet names:
 |pre w/ json|
 |pre w/ async json|
 
+## Release Notes
+### `v0.1.2`
+* Merge upstream changes: #1, #2, #3
+* Increment version number: #4
+
+### `v0.1.1`
+* Increment version to test auto-updates
+
+### `v0.1.0`
+* Initial commit
+
 
 [snippets]: https://github.com/ejsuncy/alfred-angular-snippets/blob/master/snippets.gif
