@@ -83,6 +83,11 @@ Your query will be matched against the following snippet names:
 |content|
 |resolver|
 
+## Development
+To export modifications to the code as a .alfredworkflow file for publishing a release binary, simply use the command 
+`zip -r alfred-angular-snippets-[version].alfredworkflow alfred-angular-snippets -x *README.md* -x *.gif* -x *.git*`
+, where the root directory of this app is `alfred-angular-snippets`.
+
 ## Release Notes
 ### `v0.1.2`
 * Merge upstream changes: #1, #2, #3
