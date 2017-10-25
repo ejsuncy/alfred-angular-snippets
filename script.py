@@ -6,8 +6,7 @@ import re
 from workflow import Workflow3
 import json
 
-__version__ = 'v0.1.2'
-__github_slug__ = 'ejsuncy/alfred-angular-snippets.git'
+__github_slug__ = 'ejsuncy/alfred-angular-snippets'
 
 log = None
 
@@ -15,6 +14,9 @@ var_regex = re.compile("\${(.*?):(.*?)}")
 cursor_regex = re.compile("\$0")
 
 def main(wf):
+    # Process magic args
+    sys_args = wf.args
+
     query = sys.argv[1].split()
     keyword = query[0]
 
@@ -101,15 +103,16 @@ def get_snippets():
 
 if __name__ == '__main__':
     update_settings = {
-        'github_slug':  __github_slug__,
-        'version':      __version__
+        'github_slug':  __github_slug__
     }
 
     wf = Workflow3(libraries=['./lib'], update_settings = update_settings)
 
     if wf.update_available:
-        wf.start_update()
-        wf.clear_cache()
+        wf.add_item('New version available',
+                        'Action this item to install the update',
+                        autocomplete='workflow:update',
+                        icon=ICON_INFO)
 
     global snippets
     snippets = wf.cached_data('snippets', get_snippets, max_age=0)
